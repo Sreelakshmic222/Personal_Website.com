@@ -1,0 +1,293 @@
+*{
+   margin:0;
+   padding:0;
+   font-family: 'Poppins', sans-serif;
+
+}
+.header{
+     min-height:100vh;
+     width:100%;
+     background-image:linear-gradient(rgba(3,11,20,0.7),rgba(3,11,20,0.7)),url('Background.jfif');
+     background-repeat:no-repeat;
+     background-size:cover;
+   }
+ nav{
+ display:flex;
+ padding:2% 6%;
+ justify-content:space-between;
+ align-items:center;
+ }
+
+ nav img{
+ width:120px;
+ }
+ .nav-links{
+ flex:1;
+ text-align:right;
+ }
+ .nav-links ul li{
+ list-style:square inside;
+ display:inline-block;
+ padding:8px 12px;
+ position:relative;
+ }
+ .nav-links ul li::after{
+ content:'';
+ width:0%;
+ height:2px;
+ background:#f60065;
+ display:block;
+ margin:auto;
+ transition:0.7s;
+ }
+
+ .nav-links ul li:hover::after{
+ width:100%}
+
+ .nav-links ul li a{
+ color:#fff;
+ text-decoration:overline dotted white;
+ font-size:17px;
+ }
+ .text-box{
+ width=90%;
+ color:#fff;
+ position:absolute;
+ }
+
+ .text-box h1{
+ font-size:55px;
+ color:#f61674;
+ }
+
+.text-box h3{
+font-size:50px;
+left-spacing:1px;
+line-height:24px;
+}
+
+.text-box span{
+color:rgb(230,104,59);
+}
+
+.text-box a{
+text-decoration:none;
+color:#fff;
+background:rgb(36,0,30);
+margin:26px 0;
+padding:10px 18px;
+border-radius:10px;
+display:inline-block;
+transition:-4s ease;
+}
+
+.text-box a:hover{
+        background:#f44336;
+       }
+ nav .fa{
+ display:none;}
+@media(max-width:700px){
+.text-box h1{
+ font-size:20px;
+}
+.text-box h3{
+font-size:18px;
+}
+.nav-links ul li{
+display:block;
+}
+.nav-links{
+position:absolute;
+background:#f44336;
+height:100vh;
+width:200px;
+top:0;
+right:-200px;
+text-align:left;
+z-index:2;
+transition:1s;
+
+}
+nav .fa{
+display:block;
+color:#fff;
+margin:10px;
+font-size:22px;
+cursor:pointer;
+}
+.nav-links ul{
+padding:30px;
+
+}
+}
+/*-------About------ */
+.About{
+width:80%;
+margin:auto;
+text-align:center;
+padding:top:100px;}
+h1{
+font-size:36px;
+font-weight:600;
+}
+p{
+color:rgb(227,2,90);
+font-size:14px;
+font-weight:500;
+line-height:22px;
+padding10px;:
+}
+.row{
+margin-top:5%;
+display:flex;
+justify-content:space-between;
+}
+.about-col{
+flex-basis:31%;
+background:#fff3f3;
+border-radius:10px;
+margin-bottom:5%;
+padding:20px 12px;
+box-sizing:border-box;
+}
+h3{
+text-align:center;
+font-weight:600;
+margin:10px 0;
+}
+.about-col:hover{
+box-shadow:0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width:800px){
+.row{
+flex-direction:column;
+}
+}
+/*-----------skills----------*/
+
+.skills{
+width:80%;
+margin:auto;
+text-align:center;
+padding-top:50px;
+}
+skills-col{
+flex-basis:32%;
+border-radius:5px;
+margin-bottom:30px;
+background:#fff3f3
+overflow:hidden;
+}
+skills-col ul li{
+position:relative;
+background:#ff03f3;
+box-sizing:border-box;
+}
+.skills-col ul li:hover{
+box-shadow:0 0 20px 0px rgba(0,0,0.2,0.2);
+}
+skills-col img{
+width:100%;
+}
+@media(max-width:800px){
+.skills-col img{
+width:300px;
+height:200px;
+}
+.skills{
+text-align:left;}
+}
+/*-----------Achivements-------------*/
+.Achivements{
+width:80%;
+margin:auto;
+text:align:center;
+padding-top:100px;
+}
+.Achivements-col{
+flex-basis:31%;
+border-radius:10px;
+margin-bottom:5%;
+text-align:left;
+}
+.Achivements-col img{
+width:100%
+height:200px;
+border-radius:10px;
+}
+.Achivements-col p{
+padding:0;
+}
+.Achivements-col h3{
+margin-top:16px;
+margin-bottom:15px;
+text-align:left;
+}
+/*------------contact-----------*/
+.Contact{
+margin:100px;
+width:80%;
+background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('contact.jfif');
+background-position:center;
+background-size:cover;
+border-radius:5px;
+text-align:center;
+padding:10px 20px;
+}
+.Contact h1{
+color:#fff;
+margin-bottom:40px;
+padding:0;
+}
+.Contact a{
+text-decoration:none;
+color:#fff;
+background:rgb(36,0,30);
+margin:26px 0;
+padding:10px 18px;
+border-radius:10px;
+display:inline-block;
+transition:-4s ease;
+}
+.contact a:hover{
+        background:#f44336;
+       }
+
+hero-btn{
+display:inline-block;
+text-decoration:none;
+color:#fff;
+border:1px solid #fff;
+padding:12px 34px;
+font-size:13px;
+background:transparent;
+position:relative;
+cursor:pointer;
+}
+hero-btn:hover{
+border:1px solid #f44336;
+background:#f44336;
+transition:1s;
+}
+@media(max-width:600px){
+.Contact h1{
+font-size:24px;
+}
+}
+/*------------------footer-----------*/
+.footer{
+width:100%;
+text-align:center;
+padding:30px 0;
+}
+.footer h4{
+margin-bottom:25px;
+margin-top:20px;
+font-weight:600;
+}
+.icons .fa{
+color:black;
+margin:0 13px;
+cursor:pointer;
+padding:18px 0;
+}
